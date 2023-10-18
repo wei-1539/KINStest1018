@@ -1,0 +1,369 @@
+/* 更改按鈕圖案 */
+.swiperControl {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    margin: 0 auto;
+}
+
+.swiperBtnR,
+.swiperBtnL {
+    width: 80px;
+    height: 80px;
+}
+
+@media (max-width: 768px) {
+
+    .swiperBtnR,
+    .swiperBtnL {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 568px) {
+
+    .swiperBtnR,
+    .swiperBtnL {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.mySwiper1 .swiperBtnR:after {
+    content: "";
+    background-image: url(../images/slider/text_10_right.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100px;
+    height: 100%;
+}
+
+.mySwiper1 .swiperBtnL:after {
+    content: "";
+    background-image: url(../images/slider/text_10_left.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.mySwiper2 .swiperBtnR:after {
+    content: "";
+    background-image: url(../images/slider/text_32_right.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100px;
+    height: 100%;
+}
+
+.mySwiper2 .swiperBtnL:after {
+    content: "";
+    background-image: url(../images/slider/text_32_left.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* 收合 */
+.close_img {
+    width: 100%;
+    max-height: 0;
+    transition: max-height .8s cubic-bezier(1, 0.2, 0.2, 1);
+    overflow: hidden;
+}
+
+.show {
+    max-height: 5000px;
+}
+
+.QAbtn {
+    cursor: pointer;
+}
+
+
+
+.arrow {
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+
+.Answer-close {
+    visibility: hidden;
+    opacity: 0;
+    rotate: 180deg;
+}
+
+.Answer-show {
+    visibility: visible;
+    opacity: 1;
+    rotate: -180deg;
+}
+
+/* 打字動畫 */
+.STA_title {
+    /* font-family: 'Noto Sans TC', sans-serif; */
+    font-family: 'Helvetica', 'Enblod', serif;
+    font-size: 2.75rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 2.25px;
+    color: #e47c7c;
+}
+
+.txt_red {
+    /* color: #EC0056; */
+    position: relative;
+    z-index: 1;
+}
+
+.txt_red::after {
+    content: "";
+    background-color: #F7F95D;
+    width: 100%;
+    height: 40%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 25px;
+    position: absolute;
+}
+
+@media (max-width:992px) {
+    .STA_title {
+        font-size: 2.5rem;
+        line-height: 1.25;
+    }
+}
+
+@media (max-width:767px) {
+    .STA_title {
+        font-size: 0.9rem;
+        line-height: 1.35;
+        letter-spacing: 2px;
+    }
+}
+
+/* =========
+    導覽列
+============ */
+nav {
+    position: sticky;
+    z-index: 10;
+    max-width: 1000px;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    background-color: #Fff;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.listGroup {
+    background-color: #F3EDEA;
+}
+
+.listItem {
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.listLink {
+    font-size: 2rem;
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
+    color: #000;
+    transition: all .3s;
+    padding: 5% 0;
+}
+
+.listLink:hover {
+    background-color: #111111;
+    color: #F3EDEA;
+}
+
+
+@media (max-width:767px) {
+
+
+    .listLink {
+        font-size: 1.15rem;
+    }
+}
+
+/* menu icon */
+.menuBar {
+    cursor: pointer;
+    position: absolute;
+    right: 7%;
+    top: 40%;
+    width: 80px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+    /* background-color: red; */
+
+}
+
+.menuBar::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20%;
+    border-radius: 5px;
+    /* margin: 5% 0; */
+    background-color: #000;
+    transition: all .5s;
+}
+
+.menuBar::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 20%;
+    border-radius: 5px;
+    /* margin: 5% 0; */
+    background-color: #000;
+    transition: all .5s;
+}
+
+/* 點擊後 */
+.menuBar-active:before {
+    rotate: 225deg;
+    width: 70%;
+    position: absolute;
+    top: 40%;
+    background-color: #FFA97D;
+}
+
+.menuBar-active:after {
+    rotate: -225deg;
+    width: 70%;
+    background-color: #FFA97D;
+}
+
+.SPshow {
+    position: fixed;
+    max-width: 1000px;
+    width: 20%;
+    right: -40%;
+    top: 35%;
+    box-shadow: -5px 5px 5px rgb(0, 0, 0, 0.4);
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+    /* border-radius:5px 0 0 5px; */
+}
+
+.SPshow--active {
+    right: 0%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.SPshow .listItem {
+    width: 100%;
+    border-bottom: 2px dashed #000;
+}
+
+.SPshow .listItem:last-child {
+    border: none;
+}
+
+@media (max-width:767px) {
+    .menuBar {
+        width: 50px;
+        height: 25px;
+        top: 37%;
+    }
+
+    .SPshow {
+        width: 36%;
+        top: 9%;
+    }
+
+    .SPshow .listItem {
+        width: 100%;
+        border-bottom: 1px dashed #000;
+    }
+}
+
+/* loading */
+.loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    background-color: #F3ECE9;
+}
+
+.loading .container {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    position: absolute;
+    width: 45%;
+    left: 29%;
+    top: 25%;
+    opacity: 0;
+    
+}
+
+.logoTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    left: 0%;
+    top: 45%;
+}
+
+.title_A {
+    opacity: 0
+}
+
+.title_B {
+    opacity: 0;
+}
+.loadingAN{
+    width: 15%;
+    left: 42%;
+    bottom: 15%;
+}
+@media (max-width:767px) {
+    .logo {
+        top: 33%;
+        
+    }
+    .logoTitle {
+        font-size: 1.75rem;
+    }
+    .loadingAN{
+        width: 20%;
+        left: 40%;
+        bottom: 23%;
+    }
+}

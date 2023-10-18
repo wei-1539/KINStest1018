@@ -1,0 +1,230 @@
+.light {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+.light:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -150%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+    animation: light 3s infinite ease-in-out;
+}
+
+@keyframes light {
+    0% {
+        left: -150%;
+    }
+
+    70% {
+        left: 150%;
+    }
+
+    100% {
+        left: 150%;
+    }
+}
+
+/* 跑馬燈 */
+.marquee {
+    transform: translateX(100%);
+    animation: marquee 16s linear infinite;
+}
+
+.marquee2 {
+    position: absolute;
+    left: 0%;
+    top: 0;
+    transform: translateX(100%);
+    animation: marquee 16s 8s linear infinite;
+}
+
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee3 {
+    transform: translateX(-100%);
+    animation: marquee2 16s linear infinite;
+}
+
+.marquee4 {
+    position: absolute;
+    left: 0%;
+    top: 0;
+    transform: translateX(-100%);
+    animation: marquee2 16s 8s linear infinite;
+}
+
+
+@keyframes marquee2 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+.zoomin{
+    animation: zoomin 2s ease-in-out;
+    opacity: 1;
+}
+@keyframes zoomin {
+    0% {
+        opacity: 0.2;
+        scale: 0;
+    }
+    100% {
+        opacity:1;
+        scale: 1;
+    }
+}
+.moveDown{
+    animation: moveDown 2s infinite ease-in-out;
+}
+@media (max-width:768px) {
+    .moveDown{
+        animation: moveDownSP 2s infinite ease-in-out;
+    } 
+}
+@keyframes moveDown {
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+@keyframes moveDownSP {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.scale{
+    animation: scale 2s infinite ease-in-out;
+}
+@keyframes scale {
+    0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1.1,1.1);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+/* 臉部肌膚動畫 */
+.An15-1{
+    width: 8.5%;
+    left: 10.2%;
+    top: 38.8%;
+    opacity: 0;
+    z-index: 1;
+}
+.An15-2{
+    width: 8.5%;
+    left: 29%;
+    top: 40%;
+    opacity: 0;
+    z-index: 1;
+}
+.An15-3{
+    width: 8.5%;
+    right: 34.5%;
+    top: 42.8%;
+    opacity: 0;
+}
+.An15-4{
+    width: 8.5%;
+    right: 27%;
+    top: 39%;
+    opacity: 0;
+    z-index: 1;
+}
+.An15-5{
+    width: 11.2%;
+    left: 16.8%;
+    top: 37.4%;
+    opacity: 0;
+}
+.An15-6{
+    width: 11.2%;
+    left: 18%;
+    top: 42.5%;
+    opacity: 0;
+}
+.An15-7{
+    width: 18.4%;
+    left: 36.5%;
+    top: 40%;
+    opacity: 0;
+}
+.An15-8{
+    width: 18.3%;
+    right: 30%;
+    top: 36.5%;
+    opacity: 0;
+}
+.An15-9{
+    width: 11.2%;
+    right: 17.8%;
+    top: 42.8%;
+    opacity: 0;
+}
+.An-show{
+    animation: show 1.5s  ease-in-out;
+    opacity: 1;
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+        scale: 0;
+    }
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.An-close{
+    animation: close 1.5s  ease-in-out;
+    /* opacity: 0; */
+}
+@keyframes close {
+    0%{
+        opacity: 1;
+        scale: 1;
+    }
+    100%{
+        opacity:0;
+        scale: 0;
+    }
+}

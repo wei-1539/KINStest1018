@@ -1,0 +1,699 @@
+/* 字體導入 */
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../font/AP-OTF-A1GothicStd-Light.otf')
+}
+
+@font-face {
+    font-family: 'Enblod';
+    src: url('../font/TTFirsNeue-Bold.otf')
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif; */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    /* vertical-align: middle; */
+    display: block;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+/* ===========
+    定位
+============ */
+.thing02-1 {
+    width: 14.4%;
+    right: 11%;
+    bottom: 14%;
+}
+
+.thing02-2 {
+    width: 19.8%;
+    right: 28%;
+    top: 22%;
+}
+
+.thing02-3 {
+    width: 22.1%;
+    right: 16%;
+    top: 39%;
+    opacity: 0;
+}
+
+.thing02-4 {
+    width: 24%;
+    left: 15%;
+    top: 49%;
+    opacity: 0;
+}
+
+.thing03-1 {
+    width: 62.6%;
+    left: 18.7%;
+    top: 22%;
+}
+
+.thing03-2 {
+    width: 59%;
+    right: 18.5%;
+    bottom: 31.5%;
+}
+
+.thing05-1 {
+    width: 90.5%;
+    right: -1%;
+    top: 13.5%;
+}
+
+.thing05-2 {
+    width: 100%;
+    right: 0%;
+    top: 32.5%;
+}
+
+.thing05-3 {
+    width: 80.7%;
+    right: 14.5%;
+    bottom: 26.5%;
+}
+
+.thing05-4 {
+    width: 4.5%;
+    right: 8.5%;
+    bottom: 37.5%;
+}
+
+.thing06-1 {
+    width: 93.7%;
+    right: 2.15%;
+    top: 48.5%;
+    z-index: 1;
+    -webkit-mask: url("../images/text_08.png") no-repeat center center;
+    mask: url("../images/text_08.png") no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain
+}
+
+.thing06-2 {
+    width: 100%;
+    right: 0%;
+    top: 23%;
+    scale: 1.356;
+}
+
+.thing06-3 {
+    width: 100%;
+    right: 0%;
+    bottom: 7%;
+    scale: 1.356;
+}
+.thing06-4{
+    width: 100%;
+    right: 3.5%;
+    bottom: 39.1%;
+    scale: 1.322;
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+.thing07-1 {
+    width: 79.6%;
+    right: 6.2%;
+    top: 42.5%;
+}
+
+.thing08-1 {
+    width: 85.7%;
+    left: -5.8%;
+    z-index: 1;
+    top: 2%;
+}
+
+.thing08-2 {
+    width: 46.5%;
+    right: -5%;
+    top: 24.5%;
+}
+
+.thing08-3 {
+    width: 28.3%;
+    right: 36.5%;
+    bottom: 13.5%;
+}
+
+.thing08-4 {
+    width: 4.5%;
+    right: 15.5%;
+    bottom: 27.5%;
+}
+
+.thing09-1 {
+    width: 95%;
+    right: 2.5%;
+    top: 13.5%;
+}
+
+.thing10-1 {
+    width: 25.9%;
+    right: 2%;
+    top: 14.5%;
+}
+
+.thing10-2 {
+    width: 27.4%;
+    left: 10%;
+    top: 32.5%;
+}
+
+.thing10-3 {
+    width: 49.8%;
+    right: 10%;
+    top: 60.5%;
+}
+
+.thing12-1 {
+    width: 56.3%;
+    right: -6%;
+    top: 24%;
+}
+
+.thing12-2 {
+    width: 47.9%;
+    right: -5%;
+    top: 48.5%;
+}
+
+.thing12-3 {
+    width: 57.3%;
+    right: 3%;
+    top: 67.5%;
+}
+
+.thing12-4 {
+    width: 46.6%;
+    left: 26.7%;
+    z-index: 1;
+    bottom: -11%;
+}
+
+.thing14-1 {
+    width: 50.4%;
+    left: 10%;
+    top: 3%;
+}
+
+.thing14-2 {
+    width: 76.5%;
+    left: -4%;
+    top: 35.5%;
+}
+
+.thing15-1 {
+    width: 78.7%;
+    left: 11.15%;
+    top: 3%;
+}
+
+.thing15-2 {
+    width: 4.5%;
+    right: 17.5%;
+    bottom: 4.5%;
+}
+
+.thing15-3 {
+    width: 36.7%;
+    left: 12.5%;
+    bottom: 17.5%;
+}
+
+.thing16-1 {
+    width: 75.5%;
+    left: 12.25%;
+    top: 6%;
+}
+
+.thing16-2 {
+    width: 65.8%;
+    left: 17.1%;
+    bottom: 10%;
+}
+
+.thing17-1 {
+    width: 79%;
+    left: 10.5%;
+    top: 0%;
+}
+
+.thing18-1 {
+    width: 56.9%;
+    left: 0px;
+    top: 49%;
+}
+
+.thing18-2 {
+    width: 75.8%;
+    left: -10.5%;
+    top: 31.25%;
+    animation: moveDown 2s infinite ease-in-out;
+}
+
+.thing18-3 {
+    width: 83.2%;
+    right: -15.5%;
+    top: 38%;
+    animation: moveDown 2s infinite ease-in-out;
+}
+@media (max-width:768px) {
+    .thing18-2,.thing18-3{
+        animation: moveDownSP 2s infinite ease-in-out;
+    } 
+}
+.thing19-1 {
+    width: 98.7%;
+    left: 2%;
+    top: 2%;
+}
+
+.thing19-2 {
+    width: 23.9%;
+    right: 13%;
+    top: 17.5%;
+}
+
+.thing19-3 {
+    width: 49.2%;
+    left: 5%;
+    bottom: 4%;
+}
+
+.thing19-4 {
+    width: 50.3%;
+    right: 16%;
+    bottom: 4%;
+    z-index: 1;
+}
+
+.thing19-5 {
+    width: 47.9%;
+    right: -12.5%;
+    bottom: 4%;
+}
+
+.thing19-6 {
+    width: 88.9%;
+    right: 5.75%;
+    top: 32.5%;
+}
+
+.thing19-7 {
+    width: 100%;
+    right: 0%;
+    top: 32%;
+    scale: 1.229;
+    mix-blend-mode: screen;
+}
+
+.thing20-1 {
+    width: 89%;
+    height: 38%;
+    left: 5.5%;
+    bottom: 10%;
+}
+
+.thing21-1 {
+    width: 94.9%;
+    left: 5.5%;
+    top: 29%;
+}
+
+.thing21-2 {
+    width: 95.6%;
+    left: 0;
+    bottom: 6%;
+}
+
+.thing22-1 {
+    width: 46.6%;
+    left: 26.5%;
+    top: 2.5%;
+}
+
+.thing22-2 {
+    width: 27.9%;
+    right: 12.5%;
+    top: 26.5%;
+}
+.thing23-1 {
+    width: 75.6%;
+    left: 10.5%;
+    bottom: 5.5%;
+    -webkit-mask: url("../images/thing23.png") no-repeat center center;
+    mask: url("../images/thing23.png") no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain
+}
+.thing25-1 {
+    width: 66.3%;
+    left: 15.5%;
+    top: 31.5%;
+}
+
+.thing25-2 {
+    width: 54.8%;
+    right: 24.5%;
+    top: 44%;
+}
+
+.thing26-1 {
+    width: 86.3%;
+    left: 6.75%;
+    top: 13.5%;
+}
+
+.thing26-2 {
+    width: 60.8%;
+    right: 20.5%;
+    top: 27%;
+}
+
+.thing27-1 {
+    width: 51.9%;
+    left: 24%;
+    top: 17%;
+}
+
+.thing27-2 {
+    width: 36.9%;
+    left: 0.5%;
+    top: 33%;
+}
+
+.thing27-3 {
+    width: 36.9%;
+    left: 32.75%;
+    top: 33.5%;
+}
+
+.thing27-4 {
+    width: 36.9%;
+    right: -0.5%;
+    top: 33%;
+}
+
+.thing27-5 {
+    width: 36.9%;
+    right: 47.5%;
+    top: 57.5%;
+}
+
+.thing27-6 {
+    width: 36.9%;
+    left: 48%;
+    top: 57.5%;
+}
+
+.thing27-7 {
+    width: 4.5%;
+    right: 16%;
+    bottom: -8.5%;
+    z-index: 1;
+}
+
+.thing28-1 {
+    width: 74.7%;
+    left: 6%;
+    top: 10%;
+    z-index: 1;
+}
+
+.thing28-2 {
+    width: 94.7%;
+    right: 0;
+    top: 15%;
+}
+
+.thing28-3 {
+    width: 95%;
+    left: 0%;
+    top: 46.5%;
+}
+
+.thing29-1 {
+    width: 91.6%;
+    left: 4.2%;
+    top: 3%;
+}
+
+.thing29-2 {
+    width: 87.9%;
+    right: 6.5%;
+    top: 13%;
+}
+
+.thing29-3 {
+    width: 89.5%;
+    left: 5.25%;
+    top: 51.5%;
+}
+
+.thing30-1 {
+    width: 60.9%;
+    right: -1%;
+    top: 46%;
+}
+.thing31-1 {
+    width: 95%;
+    right: 2.5%;
+    top: 0%;
+}
+.thing32-1 {
+    width: 26.9%;
+    right: 2.5%;
+    top: 70.5%;
+}
+.titleRunControl{
+    width: 89%;
+    height: 3%;
+    left: 5.7%;
+    top: 52.25%;
+    overflow: hidden;
+}
+.thing32-2 {
+    width: 100%;
+    right: 0%;
+    top: 0%;
+    scale: 1.32;
+}
+.thing34-1 {
+    width: 45%;
+    left: 8%;
+    top: 56.5%;
+}
+
+.thing34-2 {
+    width: 44.9%;
+    right: 6%;
+    top: 56%;
+}
+
+.thing34-3 {
+    width: 45%;
+    left: 8%;
+    top: 70%;
+}
+
+.thing34-4 {
+    width: 44.9%;
+    right: 6%;
+    top: 70%;
+}
+
+.thing35-1 {
+    width: 25.5%;
+    left: 5%;
+    top: 9.5%;
+}
+
+.thing35-2 {
+    width: 35.1%;
+    right: 37%;
+    top: 6.4%;
+}
+
+.thing35-3 {
+    width: 35.2%;
+    right: 5%;
+    top: 6%;
+}
+
+/* QA S */
+.openBTN {
+    width: 3.3%;
+    right: 15%;
+    top: 35%;
+}
+
+.closeBTN {
+    width: 3.3%;
+    right: 15%;
+    top: 35%;
+}
+
+/* .thing36-1{
+    width: 3.3%;
+    right: 15%;
+    top: 35%;
+}
+.thing36-2{
+    width: 3.3%;
+    right: 15%;
+    top: 35%;
+}
+.thing38-1{
+    width: 3.3%;
+    right: 15%;
+    top: 35%;
+}
+.thing38-2{
+    width: 3.3%;
+    right: 15%;
+    top: 35%;
+} */
+.thing42-1 {
+    width: 3.3%;
+    right: 15%;
+    top: 35%;
+}
+
+.thing42-2 {
+    width: 3.3%;
+    right: 15%;
+    top: 35%;
+}
+
+/* .thing45-1{
+    width: 3.3%;
+    right: 15%;
+    top: 35%;
+}
+.thing45-2{
+    width: 3.3%;
+    right: 15%;
+    top: 35%;
+}
+.thing48-1{
+    width: 3.3%;
+    right: 15%;
+    top: 35%;
+}
+.thing48-2{
+    width: 3.3%;
+    right: 15%;
+    top: 35%;
+} */
+/* QA E */
+.LogoIcon {
+    width: 25%;
+    height: 11%;
+    left: 10%;
+    top: 36%;
+}
+
+.mail {
+    width: 46%;
+    height: 7%;
+    right: 8%;
+    top: 61%;
+}
+
+.phone {
+    width: 46%;
+    height: 7%;
+    right: 8%;
+    top: 53%;
+}
+
+.IG {
+    width: 6.5%;
+    height: 9%;
+    left: 10%;
+    top: 58%;
+}
+
+.FB {
+    width: 6.5%;
+    height: 9%;
+    left: 17%;
+    top: 58%;
+}
+
+/* offer */
+.offerBtn {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.offerBtn:hover {
+    transform: translateY(5px);
+    opacity: 0.8;
+}
+
+.offer01 {
+    width: 78.4%;
+    right: 10.5%;
+    top: 6.5%;
+    z-index: 1;
+    -webkit-mask: url("../images/btn_02.png") no-repeat center center;
+    mask: url("../images/btn_02.png") no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+.offer02 {
+    width: 37.8%;
+    right: 13%;
+    top: 57.5%;
+    z-index: 1;
+
+}
