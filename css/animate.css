@@ -61,12 +61,12 @@
     }
 }
 
-.marquee3 {
+.marquee4 {
     transform: translateX(-100%);
     animation: marquee2 16s linear infinite;
 }
 
-.marquee4 {
+.marquee3 {
     position: absolute;
     left: 0%;
     top: 0;

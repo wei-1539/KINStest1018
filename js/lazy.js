@@ -20,7 +20,7 @@ var observer = new IntersectionObserver(function(entries, observer) {
         }
     }
 }, {
-    rootMargin: "100px"
+    rootMargin: "300px"
 });
 
 // document.querySelectorAll('.lazy').forEach(o => { observer.observe(o) });
