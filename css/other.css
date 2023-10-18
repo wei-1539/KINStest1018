@@ -149,9 +149,10 @@
 
 @media (max-width:767px) {
     .STA_title {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
         line-height: 1.35;
-        letter-spacing: 2px;
+        letter-spacing: 1.5px;
+        bottom: 33%;
     }
 }
 
