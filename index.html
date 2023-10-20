@@ -41,15 +41,15 @@
                 $('.title_B').addClass('An-show')
             }, 1000)
 
-            // window.addEventListener("load", () => {
-            //     setTimeout(() => {
-            //         $('.loading').fadeOut()
-            //         $('.thing02-3').addClass('zoomin')
-            //         setTimeout(() => {
-            //             $('.thing02-4').addClass('zoomin')
-            //         }, 500)
-            //     }, 2000)
-            // })
+            window.addEventListener("load", () => {
+                setTimeout(() => {
+                    $('.loading').fadeOut()
+                    $('.thing02-3').addClass('zoomin')
+                    setTimeout(() => {
+                        $('.thing02-4').addClass('zoomin')
+                    }, 500)
+                }, 2000)
+            })
 
             $("a.scrollLink").click(function (event) {
                 event.preventDefault();
