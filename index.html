@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KINS綺恩絲｜感謝填答 恭喜您獲得試用體驗資格 !</title>
+    <title>KINS綺恩絲｜日本超人氣精華水！美肌菌平衡肌活露BOOSTER </title>
     <!--描述-->
     <meta name="description"
-        content="日本益菌保養專業品牌，醫師親研開發，提倡與菌共存，平衡肌膚微生態的保養理念。使用KINSBOOSTER美肌菌平衡肌活露後，能幫助肌膚達到保濕、油水平衡、穩膚、緊緻毛孔，商品銷售突破50萬件，100％天然成分，5大無添加！消費者滿意度高達95%有感認證，每日限量50組，14日試用體驗組→只要250元，立即搶購！">
+        content="日本益菌保養專業品牌，醫師親研開發，提倡與菌共存，平衡肌膚微生態的保養理念。使用KINSBOOSTER美肌菌平衡肌活露後，能幫助肌膚達到保濕、油水平衡、穩膚、緊緻毛孔，每7秒賣出1瓶，100％天然成分，5大無添加！消費者滿意度高達95%有感認證，每日限量50組，14日試用體驗組→只要250元，立即搶購！">
     <!--關鍵字-->
-    <meta name="keywords" content="KINS,BOOSTER,美肌菌平衡肌活露,美肌菌,機能水,益菌保養">
+    <meta name="keywords" content="KINS,BOOSTER,美肌菌平衡肌活露,美肌菌,機能水,精華水,益菌保養,美肌菌保養,緊緻毛孔,日本製">
 
     <!--縮圖-->
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="./images/300x300.png" />
     <!--icon-->
     <link rel="shortcut icon" href="https://ab-kins.landinghub.site/common/images/favicon.ico">
 
@@ -41,15 +41,15 @@
                 $('.title_B').addClass('An-show')
             }, 1000)
 
-            window.addEventListener("load", () => {
-                setTimeout(() => {
-                    $('.loading').fadeOut()
-                    $('.thing02-3').addClass('zoomin')
-                    setTimeout(() => {
-                        $('.thing02-4').addClass('zoomin')
-                    }, 500)
-                }, 2000)
-            })
+            // window.addEventListener("load", () => {
+            //     setTimeout(() => {
+            //         $('.loading').fadeOut()
+            //         $('.thing02-3').addClass('zoomin')
+            //         setTimeout(() => {
+            //             $('.thing02-4').addClass('zoomin')
+            //         }, 500)
+            //     }, 2000)
+            // })
 
             $("a.scrollLink").click(function (event) {
                 event.preventDefault();
@@ -119,6 +119,9 @@
                 <a href="#target3" class="listLink scrollLink">使用方法</a>
             </li>
             <li class="listItem">
+                <a href="#target4" class="listLink scrollLink">成分說明</a>
+            </li>
+            <li class="listItem">
                 <a href="#offer" class="listLink scrollLink">立即購買</a>
             </li>
         </ul>
@@ -129,10 +132,11 @@
         <div class="bg2">
             <div class="container relative">
                 <img class="lazy" data-src="./images/BG/LP_02.png" alt="" width="1000" height="1998">
-                <img class="lazy absolute thing02-1" data-src="./images/text_01.png" alt="" width="144" height="144">
-                <img class="lazy absolute thing02-2" data-src="./images/text_02.png" alt="" width="198" height="198">
+                <img class="lazy absolute thing02-1 " data-src="./images/text_01.png" alt="" width="144" height="144">
+                <img class="lazy absolute thing02-2 " data-src="./images/text_02.png" alt="" width="198" height="198">
                 <img class="lazy absolute thing02-3" data-src="./images/text_03.png" alt="" width="221" height="194">
                 <img class="lazy absolute thing02-4" data-src="./images/text_04.png" alt="" width="240" height="235">
+                <img class="lazy absolute thing02-5 " data-src="./images/text_05.png" alt="" width="144" height="144">
             </div>
         </div>
 
@@ -150,7 +154,7 @@
             </div>
         </div>
 
-        <div class="bg5">
+        <div class="bg5" id="target1">
             <div class="container relative">
                 <img class="lazy" data-src="./images/BG/LP_05.png" alt="" width="1000" height="2811">
                 <img class="lazy absolute thing05-1" data-src="./images/text_05b.png" alt="" width="905" height="767"
@@ -167,7 +171,7 @@
         <div class="bg6">
             <div class="container relative">
                 <img class="lazy" data-src="./images/BG/LP_06.png" alt="" width="1000" height="2143">
-                <div class="absolute thing06-1">
+                <div class="absolute thing06-1" data-aos="zoom-in">
                     <div class="light">
                         <img class="lazy" data-src="./images/text_08.png" alt="" width="937" height="308">
                     </div>
@@ -182,7 +186,7 @@
                     <img class="lazy marquee4" data-src="images/text_07.png" alt="" width="1371" height="759">
                     <img class="lazy marquee3" data-src="images/text_06.png" alt="" width="1371" height="759">
                 </div>
-                <img class="lazy absolute thing06-4" data-src="./images/thing06.png" alt="" width="1322" height="112">
+                <img class="lazy absolute thing06-4" data-src="./images/thing06.png" alt="" width="1322" height="112"data-aos="zoom-in">
             </div>
         </div>
 
@@ -289,7 +293,7 @@
             </div>
         </div>
 
-        <div class="bg15">
+        <div class="bg15" id="target2">
             <div class="container relative">
                 <img class="lazy" data-src="./images/BG/LP_15.png" alt="" width="1000" height="2064">
                 <img class="lazy absolute thing15-1" data-src="./images/text_19a.png" alt="" width="787" height="178"
@@ -299,13 +303,13 @@
                 <img class="lazy absolute thing15-3" data-src="./images/text_20.png" alt="" width="367" height="355">
                 <!-- animate -->
                 <img class="lazy absolute js-An An15-1" data-src="./images/text_14.png" alt="" width="85" height="85">
-                <img class="lazy absolute js-An An15-2" data-src="./images/text_14.png" alt="" width="85" height="85">
-                <img class="lazy absolute js-An An15-3" data-src="./images/text_14.png" alt="" width="85" height="85">
-                <img class="lazy absolute js-An An15-4" data-src="./images/text_14.png" alt="" width="85" height="85">
                 <img class="lazy absolute js-An An15-5" data-src="./images/text_15.png" alt="" width="112" height="86">
+                <img class="lazy absolute js-An An15-2" data-src="./images/text_14.png" alt="" width="85" height="85">
                 <img class="lazy absolute js-An An15-6" data-src="./images/text_16.png" alt="" width="112" height="85">
+                <img class="lazy absolute js-An An15-3" data-src="./images/text_14.png" alt="" width="85" height="85">
                 <img class="lazy absolute js-An An15-7" data-src="./images/text_17.png" alt="" width="184" height="184">
                 <img class="lazy absolute js-An An15-8" data-src="./images/text_18.png" alt="" width="183" height="99">
+                <img class="lazy absolute js-An An15-4" data-src="./images/text_14.png" alt="" width="85" height="85">
                 <img class="lazy absolute js-An An15-9" data-src="./images/text_19.png" alt="" width="112" height="85">
             </div>
         </div>
@@ -331,7 +335,7 @@
         <div class="bg18">
             <div class="container relative">
                 <img class="lazy" data-src="./images/BG/LP_18.png" alt="" width="1000" height="2593">
-                <img class="lazy absolute thing18-1" data-src="./images/text_21-1.jpg" alt="" width="569" height="278">
+                <img class="lazy absolute thing18-1" data-src="./images/text_21-1.png" alt="" width="569" height="278">
                 <img class="lazy absolute thing18-2" data-src="./images/text_21.png" alt="" width="758" height="666">
                 <img class="lazy absolute thing18-3" data-src="./images/text_22.png" alt="" width="832" height="816">
             </div>
@@ -359,17 +363,17 @@
             </div>
         </div>
 
-        <div class="bg20">
+        <div class="bg20" >
             <div class="container relative">
                 <img class="lazy" data-src="./images/BG/LP_20.png" alt="" width="1000" height="1453">
-                <div class="absolute thing20-1">
+                <div class="absolute thing20-1" id="target3">
                     <video class="lazy" data-src="./images/video.mp4" controls width="100%" height="100%" playsinline
                         muted autoplay loop></video>
                 </div>
             </div>
         </div>
 
-        <div class="bg21" id="target3">
+        <div class="bg21" >
             <div class="container relative">
                 <img class="lazy" data-src="./images/BG/LP_21.png" alt="" width="1000" height="1475">
                 <img class="lazy absolute thing21-1" data-src="./images/text_23d.png" alt="" width="949" height="421"
@@ -379,7 +383,7 @@
             </div>
         </div>
 
-        <div class="bg22">
+        <div class="bg22" id="target4">
             <div class="container relative">
                 <img class="lazy" data-src="./images/BG/LP_22.png" alt="" width="1000" height="2159">
                 <img class="lazy absolute thing22-1 moveDown" data-src="./images/text_24.png" alt="" width="466"
@@ -403,10 +407,12 @@
         <div class="bg24">
             <div class="container relative">
                 <img class="lazy" data-src="./images/BG/LP_24.png" alt="" width="1000" height="1897">
+                <img class="lazy absolute thing24-1" data-src="./images/thing_24-1.gif" alt="" width="1000" height="1064">
+                <img class="lazy absolute thing24-2" data-src="./images/thing_24-2.gif" alt="" width="1000" height="1065">
             </div>
         </div>
 
-        <div class="bg25" id="target2">
+        <div class="bg25" >
             <div class="container relative">
                 <img class="lazy" data-src="./images/BG/LP_25.png" alt="" width="1000" height="2131">
                 <img class="lazy absolute thing25-1" data-src="./images/text_26.png" alt="" width="663" height="239"
@@ -505,8 +511,9 @@
         </div>
 
         <!-- offer s -->
-        <div class="bg32" id="offer">
+        <div class="bg32" >
             <div class="container relative">
+                <div id="offer" class="absolute" style="top:41%"></div>
                 <img class="lazy" data-src="./images/BG/LP_32.png" alt="" width="1000" height="2110">
                 <img class="lazy absolute thing32-1 moveDown" data-src="./images/text_35a.png" alt="" width="269"
                     height="269">
@@ -523,7 +530,7 @@
         <div class="bg33">
             <div class="container relative">
                 <img class="lazy" data-src="./images/BG/LP_33.png" alt="" width="1000" height="281">
-                <a href="" class="scrollLink absolute offer01 offerBtn scale">
+                <a href="javascript:void(0)" onclick="productChange(65)"  class="scrollLink absolute offer01 offerBtn scale">
                     <div class="light">
                         <img class="lazy" data-src="./images/btn_02.png" alt="" width="784" height="247">
                     </div>
@@ -597,7 +604,7 @@
         <div class="bg40">
             <div class="container relative">
                 <img class="lazy" data-src="./images/QA/LP_40.png" alt="" width="1000" height="935">
-                <a href="" class="scrollLink absolute offer02 offerBtn ">
+                <a href="javascript:void(0)" onclick="productChange(28)"  class="scrollLink absolute offer02 offerBtn ">
                     <img class="lazy" data-src="./images/btn_03.png" alt="" width="378" height="83">
                 </a>
             </div>

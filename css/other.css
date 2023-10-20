@@ -326,20 +326,20 @@ nav {
 
 .logo {
     position: absolute;
-    width: 45%;
-    left: 29%;
-    top: 25%;
+    width: 25%;
+    left: 37.5%;
+    top: 35%;
     opacity: 0;
     
 }
 
 .logoTitle {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
     width: 100%;
     text-align: center;
     left: 0%;
-    top: 45%;
+    top: 42.5%;
 }
 
 .title_A {
@@ -350,21 +350,21 @@ nav {
     opacity: 0;
 }
 .loadingAN{
-    width: 15%;
-    left: 42%;
+    width: 12.5%;
+    left: 45%;
     bottom: 15%;
 }
 @media (max-width:767px) {
     .logo {
-        top: 33%;
+        top: 38%;
         
     }
     .logoTitle {
-        font-size: 1.75rem;
+        font-size: 1.15rem;
     }
     .loadingAN{
-        width: 20%;
-        left: 40%;
+        width: 17.5%;
+        left: 42.5%;
         bottom: 23%;
     }
 }

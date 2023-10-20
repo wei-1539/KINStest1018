@@ -67,12 +67,14 @@ a {
     width: 14.4%;
     right: 11%;
     bottom: 14%;
+     animation: moveDown 2s infinite ease-in-out;
 }
 
 .thing02-2 {
     width: 19.8%;
     right: 28%;
     top: 22%;
+     animation: moveDown 2s 1s infinite ease-in-out;
 }
 
 .thing02-3 {
@@ -87,6 +89,12 @@ a {
     left: 15%;
     top: 49%;
     opacity: 0;
+}
+.thing02-5 {
+    width: 14.4%;
+    left: 13%;
+    top: 13%;
+     animation: moveDown 2s 2s infinite ease-in-out;
 }
 
 .thing03-1 {
@@ -149,7 +157,8 @@ a {
     bottom: 7%;
     scale: 1.356;
 }
-.thing06-4{
+
+.thing06-4 {
     width: 100%;
     right: 3.5%;
     bottom: 39.1%;
@@ -157,6 +166,7 @@ a {
     z-index: 1;
     mix-blend-mode: screen;
 }
+
 .thing07-1 {
     width: 79.6%;
     right: 6.2%;
@@ -289,7 +299,9 @@ a {
     width: 56.9%;
     left: 0px;
     top: 49%;
+    z-index: 1;
 }
+
 
 .thing18-2 {
     width: 75.8%;
@@ -302,13 +314,20 @@ a {
     width: 83.2%;
     right: -15.5%;
     top: 38%;
-    animation: moveDown 2s infinite ease-in-out;
+    animation: moveDown 2s 1s infinite ease-in-out;
+    z-index: 1;
 }
+
 @media (max-width:768px) {
-    .thing18-2,.thing18-3{
+    .thing18-2 {
         animation: moveDownSP 2s infinite ease-in-out;
-    } 
+    }
+
+    .thing18-3 {
+        animation: moveDownSP 2s 1s infinite ease-in-out;
+    }
 }
+
 .thing19-1 {
     width: 98.7%;
     left: 2%;
@@ -384,15 +403,29 @@ a {
     right: 12.5%;
     top: 26.5%;
 }
+
 .thing23-1 {
     width: 75.6%;
-    left: 10.5%;
+    left: 11.5%;
     bottom: 5.5%;
     -webkit-mask: url("../images/thing23.png") no-repeat center center;
     mask: url("../images/thing23.png") no-repeat center center;
     -webkit-mask-size: contain;
     mask-size: contain
 }
+
+.thing24-1 {
+    width: 80%;
+    left: 10%;
+    top: 2%;
+}
+
+.thing24-2 {
+    width: 80%;
+    left: 10%;
+    top: 48.5%;
+}
+
 .thing25-1 {
     width: 66.3%;
     left: 15.5%;
@@ -502,29 +535,34 @@ a {
     right: -1%;
     top: 46%;
 }
+
 .thing31-1 {
     width: 95%;
     right: 2.5%;
     top: 0%;
 }
+
 .thing32-1 {
     width: 26.9%;
     right: 2.5%;
     top: 70.5%;
 }
-.titleRunControl{
+
+.titleRunControl {
     width: 89%;
     height: 3%;
     left: 5.7%;
     top: 52.25%;
     overflow: hidden;
 }
+
 .thing32-2 {
     width: 100%;
     right: 0%;
     top: 0%;
     scale: 1.32;
 }
+
 .thing34-1 {
     width: 45%;
     left: 8%;
