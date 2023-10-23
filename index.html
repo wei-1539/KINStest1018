@@ -26,6 +26,15 @@
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!-- google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/other.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -43,11 +52,11 @@
 
             window.addEventListener("load", () => {
                 setTimeout(() => {
-                    $('.loading').fadeOut()
                     $('.thing02-3').addClass('zoomin')
                     setTimeout(() => {
                         $('.thing02-4').addClass('zoomin')
                     }, 500)
+                    $('.loading').fadeOut()
                 }, 2000)
             })
 
@@ -137,6 +146,12 @@
                 <img class="lazy absolute thing02-3" data-src="./images/text_03.png" alt="" width="221" height="194">
                 <img class="lazy absolute thing02-4" data-src="./images/text_04.png" alt="" width="240" height="235">
                 <img class="lazy absolute thing02-5 " data-src="./images/text_05.png" alt="" width="144" height="144">
+                <div class="absolute thing02-6">
+                    <div class="light">
+                        <img class="lazy" data-src="./images/4weeks.png" alt="" width="917" height="253">
+                    </div>
+                </div>
+                <img class="lazy absolute thing02-7" data-src="./images/cap.png" alt="" width="249" height="258">
             </div>
         </div>
 
@@ -186,7 +201,8 @@
                     <img class="lazy marquee4" data-src="images/text_07.png" alt="" width="1371" height="759">
                     <img class="lazy marquee3" data-src="images/text_06.png" alt="" width="1371" height="759">
                 </div>
-                <img class="lazy absolute thing06-4" data-src="./images/thing06.png" alt="" width="1322" height="112"data-aos="zoom-in">
+                <img class="lazy absolute thing06-4" data-src="./images/thing06.png" alt="" width="1322" height="112"
+                    data-aos="zoom-in">
             </div>
         </div>
 
@@ -363,7 +379,7 @@
             </div>
         </div>
 
-        <div class="bg20" >
+        <div class="bg20">
             <div class="container relative">
                 <img class="lazy" data-src="./images/BG/LP_20.png" alt="" width="1000" height="1453">
                 <div class="absolute thing20-1" id="target3">
@@ -373,7 +389,7 @@
             </div>
         </div>
 
-        <div class="bg21" >
+        <div class="bg21">
             <div class="container relative">
                 <img class="lazy" data-src="./images/BG/LP_21.png" alt="" width="1000" height="1475">
                 <img class="lazy absolute thing21-1" data-src="./images/text_23d.png" alt="" width="949" height="421"
@@ -407,12 +423,14 @@
         <div class="bg24">
             <div class="container relative">
                 <img class="lazy" data-src="./images/BG/LP_24.png" alt="" width="1000" height="1897">
-                <img class="lazy absolute thing24-1" data-src="./images/thing_24-1.gif" alt="" width="1000" height="1064">
-                <img class="lazy absolute thing24-2" data-src="./images/thing_24-2.gif" alt="" width="1000" height="1065">
+                <img class="lazy absolute thing24-1" data-src="./images/thing_24-1.gif" alt="" width="1000"
+                    height="1064">
+                <img class="lazy absolute thing24-2" data-src="./images/thing_24-2.gif" alt="" width="1000"
+                    height="1065">
             </div>
         </div>
 
-        <div class="bg25" >
+        <div class="bg25">
             <div class="container relative">
                 <img class="lazy" data-src="./images/BG/LP_25.png" alt="" width="1000" height="2131">
                 <img class="lazy absolute thing25-1" data-src="./images/text_26.png" alt="" width="663" height="239"
@@ -511,7 +529,7 @@
         </div>
 
         <!-- offer s -->
-        <div class="bg32" >
+        <div class="bg32">
             <div class="container relative">
                 <div id="offer" class="absolute" style="top:41%"></div>
                 <img class="lazy" data-src="./images/BG/LP_32.png" alt="" width="1000" height="2110">
@@ -530,7 +548,8 @@
         <div class="bg33">
             <div class="container relative">
                 <img class="lazy" data-src="./images/BG/LP_33.png" alt="" width="1000" height="281">
-                <a href="javascript:void(0)" onclick="productChange(65)"  class="scrollLink absolute offer01 offerBtn scale">
+                <a href="javascript:void(0)" onclick="productChange(65)"
+                    class="scrollLink absolute offer01 offerBtn scale">
                     <div class="light">
                         <img class="lazy" data-src="./images/btn_02.png" alt="" width="784" height="247">
                     </div>
@@ -604,7 +623,7 @@
         <div class="bg40">
             <div class="container relative">
                 <img class="lazy" data-src="./images/QA/LP_40.png" alt="" width="1000" height="935">
-                <a href="javascript:void(0)" onclick="productChange(28)"  class="scrollLink absolute offer02 offerBtn ">
+                <a href="javascript:void(0)" onclick="productChange(28)" class="scrollLink absolute offer02 offerBtn ">
                     <img class="lazy" data-src="./images/btn_03.png" alt="" width="378" height="83">
                 </a>
             </div>

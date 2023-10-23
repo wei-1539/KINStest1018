@@ -113,9 +113,9 @@
 
 /* 打字動畫 */
 .STA_title {
-    /* font-family: 'Noto Sans TC', sans-serif; */
-    font-family: 'Helvetica', 'Enblod', serif;
-    font-size: 2.75rem;
+    font-family: 'Noto Sans TC', sans-serif;
+    /* font-family: 'Helvetica', 'Enblod', serif; */
+    font-size: 2.5rem;
     font-weight: 600;
     line-height: 1.5;
     letter-spacing: 2.25px;
@@ -149,10 +149,10 @@
 
 @media (max-width:767px) {
     .STA_title {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
         line-height: 1.35;
         letter-spacing: 1.5px;
-        bottom: 33%;
+        bottom: 34%;
     }
 }
 
@@ -330,16 +330,16 @@ nav {
     left: 37.5%;
     top: 35%;
     opacity: 0;
-    
+
 }
 
 .logoTitle {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 600;
     width: 100%;
     text-align: center;
     left: 0%;
-    top: 42.5%;
+    top: 45%;
 }
 
 .title_A {
@@ -349,20 +349,24 @@ nav {
 .title_B {
     opacity: 0;
 }
-.loadingAN{
+
+.loadingAN {
     width: 12.5%;
     left: 45%;
     bottom: 15%;
 }
+
 @media (max-width:767px) {
     .logo {
         top: 38%;
-        
+
     }
+
     .logoTitle {
         font-size: 1.15rem;
     }
-    .loadingAN{
+
+    .loadingAN {
         width: 17.5%;
         left: 42.5%;
         bottom: 23%;

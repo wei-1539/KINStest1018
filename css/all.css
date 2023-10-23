@@ -97,6 +97,22 @@ a {
      animation: moveDown 2s 2s infinite ease-in-out;
 }
 
+.thing02-6{
+    width: 91.7%;
+    left: 4%;
+    top: 25.7%;
+    -webkit-mask: url("../images/4weeks.png") no-repeat center center;
+    mask: url("../images/4weeks.png") no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain
+}
+
+.thing02-7{
+    width: 24.9%;
+    left: 38.5%;
+    top: 25.3%;
+}
+
 .thing03-1 {
     width: 62.6%;
     left: 18.7%;
@@ -106,7 +122,7 @@ a {
 .thing03-2 {
     width: 59%;
     right: 18.5%;
-    bottom: 31.5%;
+    bottom: 32.5%;
 }
 
 .thing05-1 {
